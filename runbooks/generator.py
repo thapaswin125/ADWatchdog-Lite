@@ -19,7 +19,7 @@ SYSTEM_PROMPT = (
     "junior analyst. Be specific, practical, and actionable."
 )
 
-MODEL = "claude-sonnet-4-20250514"
+MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 1000
 
 

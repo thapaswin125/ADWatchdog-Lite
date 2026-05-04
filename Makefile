@@ -14,7 +14,7 @@ install:
 	cd dashboard && npm install
 
 api:
-	uvicorn api.main:app --reload --port 8000
+	python -m uvicorn api.main:app --reload --port 8000
 
 dashboard:
 	cd dashboard && npm run dev
@@ -22,7 +22,7 @@ dashboard:
 dev:
 	@echo "Starting API on :8000 and dashboard on :5173 (Ctrl-C to stop both)"
 	@trap 'kill 0' INT TERM EXIT; \
-	  uvicorn api.main:app --port 8000 & \
+	  python -m uvicorn api.main:app --port 8000 & \
 	  (cd dashboard && npm run dev) & \
 	  wait
 
