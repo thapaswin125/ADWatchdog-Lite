@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Database & generated artifacts
+lab.db
+runbooks/output/*.md
+!runbooks/output/.gitkeep
+
+# Node / Vite
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.vite/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Secrets
+.env
+.env.*
+!.env.example
